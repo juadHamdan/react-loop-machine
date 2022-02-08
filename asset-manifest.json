@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-loop-machine/static/css/main.0e70628a.css",
+    "main.js": "/react-loop-machine/static/js/main.c155eb20.js",
+    "static/js/787.0c97fff5.chunk.js": "/react-loop-machine/static/js/787.0c97fff5.chunk.js",
+    "static/media/Bass.wav": "/react-loop-machine/static/media/Bass.bcb9ae3895e32b4a82e9.wav",
+    "static/media/Charm.wav": "/react-loop-machine/static/media/Charm.58dbb1c6e5c07a44f246.wav",
+    "static/media/Claps.wav": "/react-loop-machine/static/media/Claps.d1224a5e1dd0f8214ecd.wav",
+    "static/media/Drums_Kick.wav": "/react-loop-machine/static/media/Drums_Kick.08c7ec05a89ffb688f73.wav",
+    "static/media/Drums_Shaker.wav": "/react-loop-machine/static/media/Drums_Shaker.f4c5e4c5b3b900c76bd7.wav",
+    "static/media/Drums_Shakers.wav": "/react-loop-machine/static/media/Drums_Shakers.585444ede9e98bce98cb.wav",
+    "static/media/Lead.wav": "/react-loop-machine/static/media/Lead.c304e28c94432e494ba7.wav",
+    "static/media/Piano.wav": "/react-loop-machine/static/media/Piano.e9915829fb742b01e54f.wav",
+    "index.html": "/react-loop-machine/index.html",
+    "main.0e70628a.css.map": "/react-loop-machine/static/css/main.0e70628a.css.map",
+    "main.c155eb20.js.map": "/react-loop-machine/static/js/main.c155eb20.js.map",
+    "787.0c97fff5.chunk.js.map": "/react-loop-machine/static/js/787.0c97fff5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e70628a.css",
+    "static/js/main.c155eb20.js"
+  ]
+}
