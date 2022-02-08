@@ -1,0 +1,196 @@
+:root {
+  --white: #fff;
+  --active-color: #00aeb0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  background: var(--active-color);
+  transition: 0.1s ease-in-out;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+   width: 100%;
+   min-width: 90%;
+  -webkit-appearance: none;
+   appearance: none;
+   background: transparent;
+   transition: 0.1s ease-in-out;
+   cursor: pointer;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+ outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 0rem;  
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+ -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  transition : all .1s;
+
+  /*custom styles*/
+  width: 1.5rem;
+  height: 2rem;
+  border-radius: 35%;
+  display: block #424242;
+  background-color: #424242;
+  outline: 1px solid #212121;
+  outline-offset: 0.125rem; 
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  height: 0rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+  margin-top: -12px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  width: 1.5rem;
+  height: 2rem;
+  border-radius: 35%;
+  display: block #424242;
+  background-color: #424242;
+  outline: 1px solid #212121;
+  outline-offset: 0.125rem; 
+}
+
+.cursor {
+  width: 725px;
+  max-width: 80%;
+  border-radius: 20px;
+  margin: auto;
+  color: var(--white);
+  z-index: 1;
+}
+
+.channel {
+  position: relative;
+  width: 700px;
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  color: var(--white);
+}
+
+.cursor-line {
+  position: absolute;
+  background-color: #424242;
+  height: 46rem;
+  width: 1px;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.color-backdrop {
+  background: linear-gradient(45deg, var(--active-color) 20%, transparent 100%)
+    no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.color-backdrop.playing {
+  animation: colorChange 20s alternate infinite;
+}
+
+@keyframes colorChange {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (max-width: 1000px){
+  .cursor {
+    width: 425px;
+    border-radius: 20px;
+    margin: auto;
+    color: var(--white);
+    z-index: 1;
+  }
+
+  .channel {
+    position: relative;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    color: var(--white);
+  }
+}
+
+@media (max-width: 750px){
+  .cursor {
+    width: 325px;
+    border-radius: 20px;
+    margin: auto;
+    color: var(--white);
+    z-index: 1;
+  }
+
+  .channel {
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    color: var(--white);
+  }
+}
+
+@media (max-width: 500px){
+  .cursor {
+    width: 225px;
+    border-radius: 20px;
+    margin: auto;
+    color: var(--white);
+    z-index: 1;
+  }
+
+  .channel {
+    position: relative;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    color: var(--white);
+  }
+}
