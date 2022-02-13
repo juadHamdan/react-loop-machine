@@ -8,9 +8,6 @@ import Cursor from './components/player/Cursor';
 import ControllerButtons from './components/controller_buttons/ControllerButtons';
 
 function App() {
-  //const {backendData, getBackendData} = Example()
-  //useEffect(() => getBackendData(), []) //only runs on the first render
-
   const [trackProgress, setTrackProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [stopSelected, setStopSelected] = useState(false);
@@ -39,7 +36,7 @@ function App() {
         isPlaying={isPlaying}
       />
       <Cursor 
-        trackSample={tracks[0]} //prefered to send the length
+        trackSample={tracks[0]}
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         stopSelected={stopSelected}
