@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ChannelTrack from "./ChannelTrack";
 
 const Channel = ({ track, trackProgress, isPlaying, stopSelected, loopSelected }) => {
+  const [mute, setMute] = useState(false)
   const { title, color, audioSrc } = track
 
   const audioRef = useRef(new Audio(audioSrc));
@@ -47,6 +48,7 @@ const Channel = ({ track, trackProgress, isPlaying, stopSelected, loopSelected }
 
 
   const handleMute = () => {
+    setMute(mute => !mute)
     audioRef.current.muted = !audioRef.current.muted
   }
 
