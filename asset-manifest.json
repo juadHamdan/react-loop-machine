@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-loop-machine/static/css/main.0e70628a.css",
-    "main.js": "/react-loop-machine/static/js/main.c155eb20.js",
+    "main.css": "/react-loop-machine/static/css/main.a93c4c7d.css",
+    "main.js": "/react-loop-machine/static/js/main.3316a5c1.js",
     "static/js/787.0c97fff5.chunk.js": "/react-loop-machine/static/js/787.0c97fff5.chunk.js",
     "static/media/Bass.wav": "/react-loop-machine/static/media/Bass.bcb9ae3895e32b4a82e9.wav",
     "static/media/Charm.wav": "/react-loop-machine/static/media/Charm.58dbb1c6e5c07a44f246.wav",
@@ -12,12 +12,12 @@
     "static/media/Lead.wav": "/react-loop-machine/static/media/Lead.c304e28c94432e494ba7.wav",
     "static/media/Piano.wav": "/react-loop-machine/static/media/Piano.e9915829fb742b01e54f.wav",
     "index.html": "/react-loop-machine/index.html",
-    "main.0e70628a.css.map": "/react-loop-machine/static/css/main.0e70628a.css.map",
-    "main.c155eb20.js.map": "/react-loop-machine/static/js/main.c155eb20.js.map",
+    "main.a93c4c7d.css.map": "/react-loop-machine/static/css/main.a93c4c7d.css.map",
+    "main.3316a5c1.js.map": "/react-loop-machine/static/js/main.3316a5c1.js.map",
     "787.0c97fff5.chunk.js.map": "/react-loop-machine/static/js/787.0c97fff5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e70628a.css",
-    "static/js/main.c155eb20.js"
+    "static/css/main.a93c4c7d.css",
+    "static/js/main.3316a5c1.js"
   ]
 }
