@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Loop Machine - Assignment description
+```
+The player can play, pause, stop and loop through a list of 8 tracks channels (containing audio loops).
+As a bonus, the cursor can be dragged and dropped, moving the playback to the updated position.
+ - The application is responsive (compatible with all screens sizes) and runs on Chrome, Firefox, Opera and Edge.
+ ```
+ 
+ ### The Application
+ ```
+This is a React application, using the * HTMLAudioElement interface we map through the tracks (dynamically), playing each track while the cursor indicates all playback's positions.
+ * The HTMLAudioElement interface provides access to the properties of <audio> elements, as well as methods to manipulate them (Accessed with the Audio() constructor).
+ ```
+ 
+#### Input
+```
+We'll provide the tracks it an array, each track contains title, audio source (from ./src/assets) and color.
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Main Components:
+```
+ControllerButtons
+This component returns the Play, Stop and Loop buttons, while updating the related states.
 
-## Available Scripts
+Channel
+Input: single track and other application states.
+The channel responsible for running the track audio.
+output: ChannelTrack component: channel containing track title and colored by the color attribute.
 
-In the project directory, you can run:
+Cursor
+input: track sample and other applications states and methods.
+The cursor responsible for tracking the audio sample and moving the cursor along the track, showing the current playing position in real time.
+output: an audio cursor on top of all channels 
+ * added functionality: the cursor can be moved along the track and update the audio playback.
+ ```
+ 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
