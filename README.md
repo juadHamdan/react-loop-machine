@@ -1,3 +1,5 @@
+### Demo: https://juadhamdan.github.io/react-loop-machine/
+
 # Loop Machine - Assignment description
 ```
 The player can play, pause, stop and loop through a list of 8 tracks channels (containing audio loops).
